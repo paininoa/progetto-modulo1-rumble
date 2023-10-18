@@ -49,7 +49,7 @@ a {
   color: var(--color-text);
 }
 
-/* BUTTON STYLES*/
+/* --------------- BUTTON STYLES ----------------- */
 
 button {
   cursor: pointer;
@@ -95,6 +95,8 @@ button {
   border: 1px solid var(--color-brand);
 }
 
+/* --------------- BUTTON STYLES END ----------------- */
+
 .page-wrapper {
   height: 100vh;
   display: grid;
@@ -128,6 +130,10 @@ header > nav {
 }
 .menu-icon {
   cursor: pointer;
+}
+
+.brand image {
+  width: 100%;
 }
 
 .header-center {
@@ -390,6 +396,55 @@ main {
   :root {
     font-size: 14px;
   }
+
+  .page-wrapper {
+    grid-template-rows: auto 50px auto;
+  }
+
+  .button {
+    padding: var(--gap-xxs) var(--gap-xs);
+    border: 1.5px solid var(--color-brand);
+    font-size: var(--font-size-16);
+  }
+
+  header > nav {
+    padding: var(--gap-xs) var(--gap-s);
+  }
+
+  .brand {
+    width: 8rem;
+  }
+
+  .header-center {
+    display: none;
+  }
+
+  .page-wrapper > .nav-categories {
+    padding: 0 var(--gap-s);
+  }
+
+  .section-featured {
+    padding: var(--gap-xxs) var(--gap-s);
+  }
+
+  .featured-component {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .featured-component > figure {
+    width: 100%;
+    margin-bottom: var(--gap-s);
+  }
+
+  .featured-content {
+    width: 100%;
+  }
+
+  .section-main {
+    padding: var(--gap-xxs) var(--gap-s);
+  }
+
   .card.mobile-hide {
     display: none;
   }
