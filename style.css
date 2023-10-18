@@ -1,3 +1,5 @@
+/* STYLE GUIDE */
+
 :root {
   font-size: 16px;
   --font-size-16: 1rem;
@@ -12,11 +14,13 @@
   --color-text: #061726;
   --color-text-grey: #495a6a;
   --color-red: #d20a0a;
+  --color-brand: #74cc1d;
+  --gap-xxs: 0.5rem;
+  --gap-xs: 0.75rem;
   --gap-s: 1rem;
-  --gap-xs: calc(var(--gap-s) / 2);
-  --gap-m: calc(var(--gap-s) * 2);
-  --gap-l: calc(var(--gap-s) * 3);
-  --gap-xl: calc(var(--gap-s) * 5);
+  --gap-m: 2rem;
+  --gap-l: 3rem;
+  --gap-xl: 5rem;
   --font-standard: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -38,6 +42,21 @@ a {
   cursor: pointer;
 }
 
+button {
+  cursor: pointer;
+}
+.button {
+  padding: var(--gap-xs) var(--gap-s);
+  border-radius: 4rem;
+  background-color: transparent;
+  border: 2px solid var(--color-brand);
+  font-size: var(--font-size-14);
+  font-weight: 600;
+}
+.button.transparent {
+  border: 2px solid transparent;
+}
+
 .page-wrapper {
   height: 100vh;
   display: grid;
@@ -54,9 +73,47 @@ a {
 
 .page-wrapper > header {
   grid-area: head;
-  background-color: green;
 }
 
+header > nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--gap-xs) var(--gap-m);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-s);
+}
+.menu-icon {
+  cursor: pointer;
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-separator);
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  width: 32rem;
+  max-width: 50%;
+}
+.header-center > input {
+  flex-grow: 1;
+  border: 0;
+  padding: var(--gap-xxs);
+}
+.header-center button {
+  height: 100%;
+  background-color: transparent;
+  border: 0;
+  padding: var(--gap-xs);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* ASIDE */
 
 .page-wrapper > aside {
