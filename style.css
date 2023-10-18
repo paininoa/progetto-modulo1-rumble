@@ -40,3 +40,38 @@ a {
 p {
   font-size: var(--font-size-m);
 }
+
+body {
+  grid-template-areas:
+    "head head"
+    "aside cate"
+    "aside main";
+}
+
+/* HEADER */
+
+body > header {
+  grid-area: head;
+  background-color: greenyellow;
+}
+
+/* ASIDE */
+
+body > aside {
+  grid-area: aside;
+  background-color: yellow;
+}
+
+/* NAV CATEGORIES */
+
+body > .nav-categories {
+  grid-area: cate;
+  background-color: red;
+}
+
+/* MAIN */
+
+main {
+  grid-area: main;
+  background-color: blue;
+}
