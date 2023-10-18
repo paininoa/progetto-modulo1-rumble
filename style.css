@@ -15,6 +15,7 @@
   --color-text-grey: #495a6a;
   --color-red: #d20a0a;
   --color-brand: #74cc1d;
+  --color-yellow: #c9cc1d;
   --gap-xxs: 0.5rem;
   --gap-xs: 0.75rem;
   --gap-s: 1rem;
@@ -215,5 +216,65 @@ aside h3 {
 
 .page-wrapper > main {
   grid-area: main;
-  background-color: purple;
+}
+
+/* Featured section */
+
+.section-featured {
+  padding: var(--gap-s) var(--gap-m);
+}
+
+.featured-component {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.featured-component > figure {
+  width: 45%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid var(--color-yellow);
+}
+.featured-component > figure > img {
+}
+
+.tag-dvr {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  padding: 0.25rem;
+  background-color: var(--color-yellow);
+  border-radius: 4px;
+  font-size: var(--font-size-10);
+  font-weight: 700;
+}
+.featured-content {
+  width: 50%;
+}
+.featured-content > h3 {
+  font-size: var(--font-size-16);
+  font-weight: 500;
+  color: var(--color-text-grey);
+  margin-bottom: var(--gap-xs);
+}
+.featured-content > h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--gap-xs);
+}
+.featured-info {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-xxs);
+}
+.featured-info img {
+  border-radius: 4rem;
+}
+.featured-info-right {
+  font-size: var(--font-size-13);
+}
+.featured-info-right h4 {
+  font-weight: 600;
 }
