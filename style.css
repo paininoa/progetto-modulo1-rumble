@@ -1,0 +1,42 @@
+:root {
+  font-size: 16px;
+  --font-size-s: 0.75rem;
+  --font-size-m: 1rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 6rem;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-dark: #090c0f;
+  --color-grey: #404040;
+  --color-light-grey: #c1c5c1;
+  --color-accent: #47e225;
+
+  --gap-s: 1rem;
+  --gap-xs: calc(var(--gap-s) / 2);
+  --gap-m: calc(var(--gap-s) * 2);
+  --gap-l: calc(var(--gap-s) * 3);
+  --gap-xl: calc(var(--gap-s) * 5);
+  --font-standard: "Plus Jakarta Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-standard);
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-white);
+}
+
+p {
+  font-size: var(--font-size-m);
+}
