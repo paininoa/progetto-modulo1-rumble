@@ -29,6 +29,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -70,6 +71,11 @@ button {
 .button.category {
   border: 0;
   background-color: var(--color-off-white);
+  padding: 0 var(--gap-s);
+  height: 2rem;
+}
+.button.category img {
+  min-width: 43px;
 }
 .button.category:hover {
   background-color: var(--color-separator);
@@ -150,6 +156,9 @@ header > nav {
   border-right: 1.5px solid var(--color-separator);
   font-size: var(--font-size-10);
 }
+.page-wrapper > aside::-webkit-scrollbar {
+  width: 0;
+}
 .nav-links-wrapper {
   display: flex;
   flex-direction: column;
@@ -205,6 +214,9 @@ aside h3 {
   display: flex;
   align-items: center;
   overflow: auto;
+}
+.page-wrapper > .nav-categories::-webkit-scrollbar {
+  height: 0;
 }
 .categories-wrapper {
   display: flex;
@@ -282,6 +294,10 @@ aside h3 {
 
 /* Main section */
 
+main {
+  overflow: auto;
+}
+
 .section-main {
   padding: var(--gap-s) var(--gap-m);
   border-bottom: 1.5px solid var(--color-separator);
@@ -297,6 +313,9 @@ aside h3 {
   display: flex;
   gap: var(--gap-s);
   margin-bottom: 1.5rem;
+}
+.cards-wrapper.small-cards h3 {
+  font-size: var(--font-size-14);
 }
 .card {
   cursor: pointer;
