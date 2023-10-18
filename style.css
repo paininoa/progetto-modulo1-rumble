@@ -37,6 +37,10 @@ body {
   font-size: var(--font-size-14);
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
