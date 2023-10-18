@@ -43,6 +43,8 @@ a {
   color: var(--color-text);
 }
 
+/* BUTTON STYLES*/
+
 button {
   cursor: pointer;
 }
@@ -54,8 +56,26 @@ button {
   font-size: var(--font-size-14);
   font-weight: 600;
 }
+.button:hover {
+  background-color: var(--color-separator);
+}
 .button.transparent {
   border: 2px solid transparent;
+}
+.button.category {
+  border: 0;
+  background-color: var(--color-off-white);
+}
+.button.category:hover {
+  background-color: var(--color-separator);
+}
+.button.category.red-bg {
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+.button.category.red-bg:hover {
+  background-color: var(--color-separator);
+  color: var(--color-text);
 }
 
 .page-wrapper {
@@ -125,7 +145,6 @@ header > nav {
   border-right: 1.5px solid var(--color-separator);
   font-size: var(--font-size-10);
 }
-
 .nav-links-wrapper {
   display: flex;
   flex-direction: column;
@@ -175,7 +194,17 @@ aside h3 {
 
 .page-wrapper > .nav-categories {
   grid-area: cate;
-  background-color: red;
+  max-width: 100%;
+  border-bottom: 1.5px solid var(--color-separator);
+  padding: 0 var(--gap-m);
+  display: flex;
+  align-items: center;
+  overflow: auto;
+}
+.categories-wrapper {
+  display: flex;
+  gap: var(--gap-xs);
+  text-wrap: nowrap;
 }
 
 /* MAIN */
