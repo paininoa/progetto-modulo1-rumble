@@ -41,7 +41,12 @@ p {
   font-size: var(--font-size-m);
 }
 
-body {
+.page-wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: 70px 60px 1fr;
+
   grid-template-areas:
     "head head"
     "aside cate"
@@ -50,28 +55,28 @@ body {
 
 /* HEADER */
 
-body > header {
+.page-wrapper > header {
   grid-area: head;
-  background-color: greenyellow;
+  background-color: green;
 }
 
 /* ASIDE */
 
-body > aside {
+.page-wrapper > aside {
   grid-area: aside;
   background-color: yellow;
 }
 
 /* NAV CATEGORIES */
 
-body > .nav-categories {
+.page-wrapper > .nav-categories {
   grid-area: cate;
   background-color: red;
 }
 
 /* MAIN */
 
-main {
+.page-wrapper > main {
   grid-area: main;
-  background-color: blue;
+  background-color: purple;
 }
