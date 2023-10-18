@@ -1,16 +1,17 @@
 :root {
   font-size: 16px;
-  --font-size-s: 0.75rem;
-  --font-size-m: 1rem;
-  --font-size-l: 1.5rem;
-  --font-size-xl: 6rem;
+  --font-size-16: 1rem;
+  --font-size-14: 0.875rem;
+  --font-size-13: 0.8rem;
+  --font-size-12: 0.75rem;
+  --font-size-10: 0.6rem;
   --color-white: #fff;
+  --color-off-white: #f3f5f8;
+  --color-separator: #d6e0ea;
   --color-black: #000;
-  --color-dark: #090c0f;
-  --color-grey: #404040;
-  --color-light-grey: #c1c5c1;
-  --color-accent: #47e225;
-
+  --color-text: #061726;
+  --color-text-grey: #495a6a;
+  --color-red: #d20a0a;
   --gap-s: 1rem;
   --gap-xs: calc(var(--gap-s) / 2);
   --gap-m: calc(var(--gap-s) * 2);
@@ -27,18 +28,14 @@
 
 body {
   font-family: var(--font-standard);
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-text);
+  font-size: var(--font-size-14);
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
-  color: var(--color-white);
-}
-
-p {
-  font-size: var(--font-size-m);
 }
 
 .page-wrapper {
